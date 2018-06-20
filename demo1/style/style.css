@@ -2,5 +2,31 @@
     margin: 0; padding: 0; box-sizing: border-box;
 }
 .bg{
+    height: 100vh; background: url("../img/bg.png") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+.container{
+   position: relative; min-height: 50vh;
+    width: 100%;
+}
+.threeD{
+    perspective: 1000px; position: absolute; right: 300px; top: 0;
+}
+.threeD_box{
+    transform-style: preserve-3d;
+}
+.threeD_box img{ position: absolute;}
 
+.threeD_box .left{
+    right: 350px;
+}
+.threeD_box .computer{
+    right: 0;
+}
+.threeD_box .right{
+    top: 190px;
+}
+.threeD_box .top{
+    right: 20px; top: -60px;
 }
