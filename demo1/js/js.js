@@ -1,7 +1,7 @@
 anime({
   targets: document.querySelector('.left'),
   translateY: [
-    { value: -100},
+    { value: -80},
     { value: 0 }
   ],
   duration: 4000,
