@@ -1,15 +1,71 @@
 *{
     margin: 0; padding: 0; box-sizing: border-box;
 }
+body{
+    font-family: "Microsoft Sans Serif";
+}
+a{
+    text-decoration: none;
+}
 .bg{
     height: 100vh; background: url("../img/bg.png") no-repeat center;
     background-size: cover;
     overflow: hidden;
+    position: relative;
 }
+
+/*导航*/
+nav{
+    position: fixed; height: 100px; line-height: 100px;
+    left: 0; top: 0; width: 100%; padding: 0 40px;
+}
+nav ul{
+    float: right; height: 100%;
+}
+nav ul li {
+    display: inline-block; font-size: 0; height: 100%;
+    padding: 0 15px;
+}
+nav ul li a{
+    font-size: 16px; color: #ffffff;
+}
+nav ul li a.sign{
+    border: 1px solid #ffffff; padding: 6px 25px;
+    border-radius: 20px; transition: .2s all;
+}
+nav ul li a.sign:hover{
+    background-color: #ffffff; color: #000;
+}
+
+/*身体部分*/
 .container{
    position: relative; min-height: 50vh;
-    width: 100%;
+    width: 100%; padding-left: 40px;
 }
+.text{
+    max-width: 400px;
+}
+.text h1{
+    font-size: 30px; color: #ffffff;
+}
+.text p{
+    font-size: 14px; color: rgba(255,255,255, 0.8);
+    margin-bottom: 30px;
+}
+.text a{
+    display: block; width: 200px; height: 40px;
+    border-radius: 40px; border: 1px solid #fff;
+    text-align: center; color: #ffffff; font-size: 16px;
+    line-height: 40px;
+    transition: .2s all;
+}
+.text a:hover{
+    background-color: #ffffff; color: #000;
+    text-indent: 20px;
+}
+
+
+
 .threeD{
     perspective: 1000px; position: absolute; right: 300px; top: 0;
 }
